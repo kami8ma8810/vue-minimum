@@ -5,6 +5,13 @@ defineProps({
     required: true
   }
 })
+
+// keydown でアラートが出る処理
+const onKeydownHandle = (e) => {
+  if (e.key === 'Enter') {
+    alert('Enter key is pressed')
+  }
+}
 </script>
 
 <template>
@@ -16,6 +23,8 @@ defineProps({
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <input type="text" @keydown.up.prevent="onKeydownHandle" />
+    <TheWelcome />
   </div>
 </template>
 
