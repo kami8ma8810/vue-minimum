@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "markuplint": "markuplint \"src/**/*.vue\" -p",
-    "lint:vue": "markuplint \"**/*.vue\""
+    "markuplint": "markuplint \"src/**/*.vue\" -p"
   },
   "dependencies": {
     "vue": "^3.4.21"
